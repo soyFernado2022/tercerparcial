@@ -1,0 +1,52 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>REGISTRO DE AUTOS</title>
+  <link rel="stylesheet" href="bootstrap.min (1).css">
+</head>
+
+<body onload="mostrarAutos();">
+  <div class="container-fluid">
+    <h1 class="bg-danger text-white">REGISTRO DE AUTOS</h1><hr>
+    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#addModalAuto">Agregar Auto</button>
+    <div class="card w-100 bg-danger text-white mt-2" id="listAutos">
+      <p>AQUI VAN LOS AUTOS</p>
+    </div>
+    
+    <div class="modal fade" id="addModalAuto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">AGREGAR AUTO</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="formAdd">
+           <h2>MARCA</h2>
+      <input type="text" name="" id="marca" class="form-control m-1">
+      <h2>MODELO</h2>
+      <input type="text" name="" id="modelo" class="form-control m-1">
+      <h2>AÑO</h2>
+      <input type="text" name="" id="año" class="form-control m-1">
+      <h2>COLOR</h2>
+      <input type="text" name="" id="color" class="form-control m-1">
+      </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-success" id="agregar">Guardar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="bootstrap.min.js"></script>
+  <script src="sweetalert2.all.min-3.js"></script>
+  <script src="app.js"></script>
+  
+
+</body>
+
+</html>

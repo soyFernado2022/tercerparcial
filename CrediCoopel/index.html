@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SALARIO NETO</title>
+    <link rel="stylesheet" href="bootstrap.min (1).css">
+</head>
+<body onload="calcular()">
+    <center>
+        <h1 class="h1 mb-3 fw-normal bg-warning text-white">COPPEL</h1>
+    <hr>
+
+<a name="tema1"></a>
+
+<main class="card p-4 w-25 m-auto mt-4">
+    <form class="text-center">
+      <h1 class="h3 mb-3 fw-normal bg-warning text-white">PRODUCTO</h1>
+  
+      <div class="card mb-3" m-auto p-2>
+        <h2 class="bg-dark text-white">SELECCIONA  </h2>
+        <select id="empleado" class="form-select" aria-label="Default select example">
+            <option value="1">TV</option>
+            <option value="2">MOTO</option>
+            <option value="3">SALA</option>
+            <option value="4">REFRI</option>
+            <option value="5">LAVADORA</option>
+        </select>
+      </div>
+
+      <div class="card m-2" id="img">
+        <img src="img/tv.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">TV</p>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="card" m-auto p-2>
+            <h2 class="bg-primary text-white">PLAN</h2>
+     <table><input type="radio" class="form-check-input" name="p" id="p1" value="1"><b>6 MESES-5%</b><br>
+            <input type="radio" class="form-check-input" name="p" id="p2" value="2"><b>12 MESES-10%</b><br>
+            <input type="radio" class="form-check-input" name="p" id="p3" value="3"><b>18 MESES-15%</b><br></table>
+            </div> 
+ </div>
+
+      <div class="card m-3" m-auto p-2>
+        <h4 class="bg-primary text-white">CANTIDAD</h4>
+        <input type="range" class="form-range" id="cantidad" value="1" min="1" max="10"><span id="canti">1</span>
+      </div>
+
+      <table class="table">
+      <thead>
+        <tr class="table table-dark">
+          <th scope="col" colspan="3">PRECIO CONTADO</th>
+        </tr>
+        <tr>
+            <td colspan="3"><h1 id="salarioNeto" style="color:green">$</h1></td>
+        </tr>
+    </thead>
+  </table>
+  <table class="table">
+    <thead>
+      <tr class="table table-dark">
+        <th scope="col" colspan="3">BONO MENSUAL</th>
+      </tr>
+      <tr>
+          <td colspan="3"><h1 id="bono" style="color:green">$</h1></td>
+      </tr>
+  </thead>
+</table>
+<table class="table">
+  <thead>
+    <tr class="table table-dark">
+      <th scope="col" colspan="3">PRECIO CON INTERESES</th>
+    </tr>
+    <tr>
+        <td colspan="3"><h1 id="intereses" style="color:green">$</h1></td>
+    </tr>
+</thead>
+</table>
+
+
+      <p class="mt-5 mb-3 text-body-secondary">&copy;CECYTEM 2023</p>
+    </form>
+  </main>
+
+
+</main>
+
+
+     
+    <script src="sweetalert2.all.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
